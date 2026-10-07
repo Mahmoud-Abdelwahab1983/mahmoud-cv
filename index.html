@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mahmoud Abdel Wahab | محمود عبد الوهاب</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#14213d;--mut:#5b6478;--acc:#b8893b;--line:#e3ded2;--hero:#14213d;--onhero:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1424;--card:#161e33;--ink:#eef0f6;--mut:#9aa3b8;--acc:#d9a94f;--line:#26304a;--hero:#0a0f1c}}
+:root[data-theme="dark"]{--bg:#0e1424;--card:#161e33;--ink:#eef0f6;--mut:#9aa3b8;--acc:#d9a94f;--line:#26304a;--hero:#0a0f1c}
+html{scroll-padding-top:calc(70px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 Inter,Cairo,system-ui,sans-serif}
+[dir=rtl] body{font-family:Cairo,Inter,system-ui,sans-serif}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--hero);color:var(--onhero);display:flex;align-items:center;gap:18px;padding:12px 5vw;flex-wrap:wrap}
+nav b{letter-spacing:.12em;font-weight:800;margin-inline-end:auto}nav a{color:inherit;opacity:.8;text-decoration:none;font-size:13px}nav a:hover{opacity:1;color:var(--acc)}
+button{font:inherit;cursor:pointer;border:1px solid var(--acc);background:transparent;color:inherit;border-radius:8px;padding:6px 14px;font-size:13px}
+button.p{background:var(--acc);color:#14213d;font-weight:700}button:hover{filter:brightness(1.1)}
+.hero{background:linear-gradient(135deg,var(--hero),#22335c);color:var(--onhero);padding:60px 5vw 70px}
+.wrap{max-width:1000px;margin:auto}.hh{display:flex;gap:32px;align-items:center;flex-wrap:wrap}
+.av{width:150px;height:150px;border-radius:50%;border:3px solid var(--acc);background:#22335c center/cover;display:grid;place-items:center;font-size:48px;font-weight:800;color:var(--acc);flex:none}
+.editing .av{cursor:pointer;outline:2px dashed var(--acc);outline-offset:4px}
+h1{margin:0;font-size:clamp(28px,5vw,46px);letter-spacing:.02em;line-height:1.15}.sub{color:var(--acc);font-size:18px;font-weight:600;margin:6px 0}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.chip{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:5px 14px;border-radius:99px;font-size:13px;color:#fff;text-decoration:none}
+.hl{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:36px}
+.hl div{border-top:2px solid var(--acc);padding-top:10px;font-weight:600}
+main{max-width:1000px;margin:auto;padding:30px 5vw 60px}
+section{margin-top:44px}h2{font-size:22px;margin:0 0 18px;display:flex;align-items:center;gap:12px}h2:after{content:"";flex:1;height:1px;background:var(--line)}h2:before{content:"";width:6px;height:24px;background:var(--acc);border-radius:3px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:-90px;position:relative}
+.stats .card{text-align:center}.stats .n{font-size:32px;font-weight:800;color:var(--acc)}.stats .l{color:var(--mut);font-size:13px}
+.tl{border-inline-start:2px solid var(--line);padding-inline-start:22px;display:grid;gap:16px}
+.job{position:relative}.job:before{content:"";position:absolute;inset-inline-start:-30px;top:24px;width:12px;height:12px;border-radius:50%;background:var(--acc);border:2px solid var(--bg)}
+.job h3{margin:0;font-size:17px}.co{color:var(--acc);font-weight:600}.per{color:var(--mut);font-size:13px}.job p{margin:8px 0 0;color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}.sk .ic{font-size:24px}.sk h3{margin:6px 0 2px;font-size:16px}.sk p{margin:0;color:var(--mut);font-size:14px}
+.cert{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}.cert:last-child{border:0}.cert small{color:var(--mut)}
+.ed{outline:none}.editing .ed{outline:1px dashed var(--acc);outline-offset:2px;border-radius:3px;min-width:30px;display:inline-block}.editing .ed:focus{background:rgba(184,137,59,.15)}
+.hero .ed{color:inherit}.adm{display:none}.editing .adm{display:inline-block}.x{color:#d9534f;border-color:#d9534f;padding:2px 9px;margin-top:8px}
+.bar{position:fixed;inset-inline-end:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:10}
+.bar button{background:var(--acc);color:#14213d;font-weight:700;box-shadow:0 6px 20px rgba(0,0,0,.3);padding:10px 18px}
+.tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.tools button{color:var(--ink)}.note{color:var(--mut);font-size:13px;margin:0 0 12px}
+footer{text-align:center;color:var(--mut);font-size:13px;padding:20px}
+@media print{nav,.bar,.tools-s,.adm{display:none!important}.hero{-webkit-print-color-adjust:exact;print-color-adjust:exact}.card{break-inside:avoid}}
+</style></head><body>
+<div id="app"></div>
+<input type="file" id="ph" accept="image/*" hidden><input type="file" id="imp" accept=".json" hidden>
+<script>
+const KEY='cv_mahmoud_v1';
+const DEF={photo:"",
+name:{en:"Mahmoud Abdel Wahab",ar:"محمود عبد الوهاب"},
+title:{en:"Area Manager | Retail Operations",ar:"مدير منطقة | عمليات التجزئة"},
+loc:{en:"Hawalli, Kuwait",ar:"حولي، الكويت"},
+phone:"+965 66801411",email:"Mahmoudabdelwahab_84@hotmail.com",
+hl:[{en:"Exceptional Management Skills",ar:"مهارات إدارية استثنائية"},{en:"Great Team Player",ar:"عمل جماعي ممتاز"},{en:"Good English Level",ar:"مستوى جيد في اللغة الإنجليزية"}],
+stats:[{n:"17+",l:{en:"Years of Experience",ar:"سنة خبرة"}},{n:"8",l:{en:"Years at Fishbone",ar:"سنوات في فيشبون"}},{n:"2",l:{en:"Countries: Kuwait & Egypt",ar:"دولتان: الكويت ومصر"}},{n:"4",l:{en:"Management Roles",ar:"مناصب إدارية"}}],
+about:{en:"Results-driven retail and operations professional with 17+ years of experience across Egypt and Kuwait, progressing from sales associate to Store Manager and Area Manager. Known for exceptional management skills, leading and motivating teams, and delivering consistent store performance. A great team player with a good command of spoken and written English, and proven ability to work under pressure.",ar:"متخصص في التجزئة والعمليات بخبرة تزيد عن 17 عاماً في مصر والكويت، تدرّج من موظف مبيعات إلى مدير فرع ثم مدير منطقة. يتميز بمهارات إدارية استثنائية وقدرة على قيادة الفرق وتحفيزها، وروح عمل جماعي عالية، ومستوى جيد في اللغة الإنجليزية، وقدرة على العمل تحت الضغط."},
+exp:[
+{r:{en:"Area Manager",ar:"مدير منطقة"},c:"Tabarak International Foodstuffs Company — Kuwait",p:"Jul 2020 – Jul 2021",d:"Oversaw operations, sales performance and staff across the area, ensuring standards and targets were met."},
+{r:{en:"Visual Merchandiser",ar:"منسق عرض بصري"},c:"Aqua Fashion Company — Kuwait",p:"Oct 2019 – Mar 2020",d:"Handled visual merchandising across Aqua branches: The Avenues, Souq Sharq, Al Kout Mall and 360 Mall."},
+{r:{en:"Able Seaman (AB)",ar:"بحّار ماهر"},c:"Bourbon Offshore Triangle",p:"Oct 2017 – Jun 2019",d:"Served on Bourbon crew boats with an 'Excellent' ability & conduct rating: security and anchor watches, deck maintenance, repair, sanitation, and upkeep of the ship's metal structures."},
+{r:{en:"Cashier",ar:"كاشير"},c:"Azadia Group (Bershka) — Cairo Festival City",p:"May 2015 – Sep 2016",d:"Managed cashier operations and customer service at the Bershka store."},
+{r:{en:"Store Manager",ar:"مدير فرع"},c:"Fishbone — Marghany Branch",p:"Dec 2011 – Mar 2015",d:"Led the store team and managed day-to-day operations, sales and customer experience."},
+{r:{en:"Visual Merchandiser",ar:"منسق عرض بصري"},c:"Fishbone — All Branches",p:"Dec 2009 – Nov 2011",d:"Responsible for visual merchandising and store presentation across all branches."},
+{r:{en:"Assistant Store Manager",ar:"مساعد مدير فرع"},c:"Fishbone — Zamalek Branch",p:"Aug 2008 – Nov 2009",d:"Supported the store manager in operations, team supervision and sales."},
+{r:{en:"Sales Associate",ar:"مندوب مبيعات"},c:"Fishbone — Zamalek Branch",p:"Apr 2007 – Aug 2008",d:"Delivered customer service and sales in-store."},
+{r:{en:"Sales Associate",ar:"مندوب مبيعات"},c:"Concrete — El Obour Branch",p:"Jun 2005 – Dec 2006",d:"Sales and customer service."},
+{r:{en:"Cashier",ar:"كاشير"},c:"JB — Nasr City Branch",p:"Jan 2004 – Apr 2005",d:"Cashier operations and customer service."}],
+skills:[
+{i:"👔",t:{en:"Exceptional Management",ar:"مهارات إدارية استثنائية"},d:{en:"Store & area management, team leadership, performance",ar:"إدارة الفروع والمناطق وقيادة الفرق"}},
+{i:"🤝",t:{en:"Teamwork",ar:"العمل الجماعي"},d:{en:"Great team player who builds strong, motivated teams",ar:"عضو فريق متميز يبني فرقاً قوية"}},
+{i:"🗣️",t:{en:"English",ar:"اللغة الإنجليزية"},d:{en:"Good level – reading, writing & speaking",ar:"مستوى جيد – قراءة وكتابة ومحادثة"}},
+{i:"🇪🇬",t:{en:"Arabic",ar:"اللغة العربية"},d:{en:"Native – reading, writing & speaking",ar:"اللغة الأم"}},
+{i:"🛍️",t:{en:"Visual Merchandising",ar:"العرض البصري"},d:{en:"Store presentation & brand standards",ar:"تنسيق العرض ومعايير العلامة"}},
+{i:"💬",t:{en:"Communication",ar:"مهارات التواصل"},d:{en:"Clear, professional communication",ar:"تواصل واضح ومهني"}},
+{i:"⚡",t:{en:"Work Under Pressure",ar:"العمل تحت الضغط"},d:{en:"Calm and effective in demanding environments",ar:"هادئ وفعّال في بيئات الضغط"}},
+{i:"💻",t:{en:"Microsoft Office",ar:"مايكروسوفت أوفيس"},d:{en:"Word, Excel",ar:"وورد، إكسل"}}],
+edu:{t:{en:"Bachelor of Business Administration",ar:"بكالوريوس إدارة أعمال"},s:{en:"Faculty of Commerce, Ain Shams University — 2006",ar:"كلية التجارة، جامعة عين شمس — 2006"}},
+certs:[
+{n:"Security Awareness for Seafarers with Designated Security Duties",m:"No. 31343/17/EG · Issued 29/8/2017 · Expiry 27/8/2022"},
+{n:"Elementary First Aid",m:"No. 31011/17/EG · Issued 27/8/2017 · Expiry 23/8/2022"},
+{n:"Proficiency in Survival Crafts and Rescue Boats",m:"No. 33227/18/EG · Issued 31/10/2018 · Expiry 24/10/2023"},
+{n:"Fire Prevention and Fire Fighting",m:"No. 31011/17/EG · Issued 27/8/2017 · Expiry 23/8/2022"},
+{n:"Personal Safety and Social Responsibilities",m:"No. 31011/17/EG · Issued 27/8/2017 · Expiry 23/8/2022"},
+{n:"Personal Survival Techniques",m:"No. 31011/17/EG · Issued 27/8/2017 · Expiry 23/8/2022"}]};
+const L={en:{about:"About Me",exp:"Professional Experience",skills:"Skills & Strengths",edu:"Education",certs:"Maritime Certificates",tools:"Owner Tools",edit:"✏️ Edit",done:"✅ Done",add:"＋ Add",print:"🖨 Print / PDF",exp2:"📤 Export",imp:"📥 Import",reset:"↺ Reset",nt:"Your edits are saved in this browser only. Export a backup to move them to another device.",other:"عربي",c:"Contact"},
+ar:{about:"عن نفسي",exp:"الخبرة المهنية",skills:"المهارات ونقاط القوة",edu:"التعليم",certs:"الشهادات البحرية",tools:"أدوات المالك",edit:"✏️ تعديل",done:"✅ تم",add:"＋ إضافة",print:"🖨 طباعة / PDF",exp2:"📤 تصدير",imp:"📥 استيراد",reset:"↺ إعادة ضبط",nt:"تُحفظ تعديلاتك في هذا المتصفح فقط. صدّر نسخة احتياطية لنقلها إلى جهاز آخر.",other:"EN",c:"التواصل"}};
+let S,lang='en',edit=false;
+try{S=JSON.parse(localStorage.getItem(KEY))}catch(e){}
+if(!S)S=JSON.parse(JSON.stringify(DEF));
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const T=o=>typeof o==='string'?o:(o[lang]||o.en||'');
+const get=p=>p.split('.').reduce((o,k)=>o[k],S);
+const E=(p,tag='span',cls='')=>`<${tag} class="ed ${cls}" data-p="${p}">${esc(T(get(p)))}</${tag}>`;
+const t=L=>L[lang];
+function render(){
+const l=L[lang];document.documentElement.lang=lang;document.documentElement.dir=lang=='ar'?'rtl':'ltr';
+document.body.classList.toggle('editing',edit);
+const ini=T(S.name).split(' ').slice(0,2).map(w=>w[0]).join('');
+document.getElementById('app').innerHTML=`
+<nav><b>M·A·W</b><a href="#about">${l.about}</a><a href="#exp">${l.exp}</a><a href="#skills">${l.skills}</a><a href="#edu">${l.edu}</a><button data-a="lang">${l.other}</button></nav>
+<header class="hero"><div class="wrap"><div class="hh">
+<div class="av" data-a="photo" style="${S.photo?`background-image:url(${S.photo})`:''}">${S.photo?'':ini}</div>
+<div>${E('name','h1')}<div class="sub">${E('title')}</div>
+<div class="chips"><span class="chip">📍 ${E('loc')}</span><a class="chip" href="tel:${esc(S.phone)}">📞 ${E('phone')}</a><a class="chip" href="mailto:${esc(S.email)}">✉️ ${E('email')}</a></div></div></div>
+<div class="hl">${S.hl.map((_,i)=>`<div>${E('hl.'+i)}</div>`).join('')}</div></div></header>
+<main><div class="stats">${S.stats.map((s,i)=>`<div class="card"><div class="n">${E('stats.'+i+'.n')}</div><div class="l">${E('stats.'+i+'.l')}</div></div>`).join('')}</div>
+<section id="about"><h2>${l.about}</h2><div class="card">${E('about','p')}</div></section>
+<section id="exp"><h2>${l.exp}</h2><div class="tl">${S.exp.map((j,i)=>`<div class="card job"><h3>${E('exp.'+i+'.r')}</h3><div class="co">${E('exp.'+i+'.c')}</div><div class="per">${E('exp.'+i+'.p')}</div><p>${E('exp.'+i+'.d')}</p><button class="adm x" data-a="del" data-l="exp" data-i="${i}">✕</button></div>`).join('')}</div><button class="adm" data-a="add" data-l="exp">${l.add}</button></section>
+<section id="skills"><h2>${l.skills}</h2><div class="grid">${S.skills.map((s,i)=>`<div class="card sk"><div class="ic">${E('skills.'+i+'.i')}</div><h3>${E('skills.'+i+'.t')}</h3><p>${E('skills.'+i+'.d')}</p><button class="adm x" data-a="del" data-l="skills" data-i="${i}">✕</button></div>`).join('')}</div><br><button class="adm" data-a="add" data-l="skills">${l.add}</button></section>
+<section id="edu"><h2>${l.edu}</h2><div class="card"><h3 style="margin:0">${E('edu.t')}</h3><div class="per">${E('edu.s')}</div></div></section>
+<section><h2>${l.certs}</h2><div class="card">${S.certs.map((c,i)=>`<div class="cert"><div><b>${E('certs.'+i+'.n')}</b><br><small>${E('certs.'+i+'.m')}</small></div><button class="adm x" data-a="del" data-l="certs" data-i="${i}">✕</button></div>`).join('')}<button class="adm" data-a="add" data-l="certs">${l.add}</button></div></section>
+<section class="tools-s"><h2>${l.tools}</h2><p class="note">${l.nt}</p><div class="tools"><button data-a="print">${l.print}</button><button data-a="export">${l.exp2}</button><button data-a="import">${l.imp}</button><button data-a="reset">${l.reset}</button></div></section></main>
+<footer>© ${new Date().getFullYear()} ${esc(T(S.name))}</footer>
+<div class="bar"><button data-a="edit">${edit?l.done:l.edit}</button></div>`;
+document.querySelectorAll('.ed').forEach(e=>e.contentEditable=edit);
+}
+document.addEventListener('focusout',e=>{const el=e.target.closest&&e.target.closest('.ed');if(!el)return;
+const k=el.dataset.p.split('.'),last=k.pop(),par=k.reduce((o,x)=>o[x],S),v=el.innerText.trim();
+if(par[last]&&typeof par[last]==='object')par[last][lang]=v;else par[last]=v;save()});
+document.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.classList&&e.target.classList.contains('ed')&&e.target.tagName!='P'){e.preventDefault();e.target.blur()}});
+const NEW={exp:()=>({r:{en:"New Role"},c:"Company",p:"Year – Year",d:"Describe your responsibilities and achievements."}),skills:()=>({i:"⭐",t:{en:"New Skill"},d:{en:"Details"}}),certs:()=>({n:"Certificate name",m:"Number · Issued · Expiry"})};
+document.addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(!b)return;const a=b.dataset.a;
+if(e.target.closest('.ed')&&edit&&a!='photo')return;
+if(a=='lang'){lang=lang=='en'?'ar':'en'}
+else if(a=='edit'){edit=!edit}
+else if(a=='add'){S[b.dataset.l].push(NEW[b.dataset.l]());save()}
+else if(a=='del'){if(confirm('Delete?')){S[b.dataset.l].splice(+b.dataset.i,1);save()}}
+else if(a=='print'){window.print();return}
+else if(a=='photo'){if(edit)document.getElementById('ph').click();return}
+else if(a=='import'){document.getElementById('imp').click();return}
+else if(a=='reset'){if(confirm('Reset all content to the original?')){S=JSON.parse(JSON.stringify(DEF));save()}}
+else if(a=='export'){const u=URL.createObjectURL(new Blob([JSON.stringify(S,null,1)],{type:'application/json'}));const x=document.createElement('a');x.href=u;x.download='cv-backup.json';x.click();return}
+render()});
+document.getElementById('imp').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{S=JSON.parse(r.result);save();render()}catch(x){alert('Invalid file')}};r.readAsText(f)};
+document.getElementById('ph').onchange=e=>{const f=e.target.files[0];if(!f)return;const im=new Image();im.onload=()=>{const c=document.createElement('canvas'),s=Math.min(1,400/Math.max(im.width,im.height));c.width=im.width*s;c.height=im.height*s;c.getContext('2d').drawImage(im,0,0,c.width,c.height);S.photo=c.toDataURL('image/jpeg',.85);save();render()};im.src=URL.createObjectURL(f)};
+render();
+</script></body></html>
